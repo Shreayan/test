@@ -48,20 +48,20 @@
         // Detect tab switch or page visibility change
         document.addEventListener('visibilitychange', function() {
             if (document.hidden) {
-                updateTitle('Tab changed');
+                updateTitle('Tab changed(vis)');
             } else {
-                updateTitle('Welcome to My Web Page');
+                updateTitle('Welcome to My Web Page(visibility change)');
             }
         });
 
         // Detect when the window loses focus
         window.addEventListener('blur', function() {
-            updateTitle('Tab changed');
+            updateTitle('Tab changed(blur)');
         });
 
         // Detect when the window gains focus
         window.addEventListener('focus', function() {
-            updateTitle('Welcome to My Web Page');
+            updateTitle('Welcome to My Web Page(focus)');
         });
     </script>
 <table>
